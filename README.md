@@ -14,3 +14,9 @@ Very simple php based chatting application
 * login to https://pusher.com/ and create new app
 * put pusher credentials to .env file
 * replace PUSHER_APP_KEY in your app.blade.php
+```ruby
+var pusher = new Pusher('49f3ba8c9d3adab2613e', {
+    cluster: 'ap2',
+    forceTLS: true
+});
+```
