@@ -14,17 +14,27 @@ cd laravel-chat
 composer install
 ```
 
-* make a copy of .env.example and rename to .env
-* php artisan key:generate
-* put database credentials in .env file
-* run php artisan migrate
-* to insert users and messages data run php artisan tinker
-* factory(App\User::class, 30)->create();
-* factory(App\Message::class, 500)->create();
-* login to https://pusher.com/ and create new app
-* put pusher credentials to .env file
-* replace PUSHER_APP_KEY in your app.blade.php
-```ruby
+3. Create and setup .env file
+```
+make a copy of .env.example and rename to .env
+php artisan key:generate
+put database credentials in .env file
+```
+
+4. Migrate and insert records
+```
+php artisan migrate
+to insert users and messages data run php artisan tinker
+factory(App\User::class, 30)->create();
+factory(App\Message::class, 500)->create();
+```
+
+5. Create and setup pusher account
+``` 
+login to https://pusher.com/ and create new app
+put pusher credentials to .env file
+replace PUSHER_APP_KEY in your app.blade.php
+
 var pusher = new Pusher('49f3ba8c9d3adab2613e', {
     cluster: 'ap2',
     forceTLS: true
