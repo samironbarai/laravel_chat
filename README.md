@@ -11,22 +11,22 @@ https://github.com/samironbarai/laravel_chat
 2. Install composer packages
 ```
 cd laravel-chat
-composer install
+$ composer install
 ```
 
 3. Create and setup .env file
 ```
 make a copy of .env.example and rename to .env
-php artisan key:generate
+$ php artisan key:generate
 put database credentials in .env file
 ```
 
 4. Migrate and insert records
 ```
-php artisan migrate
-to insert users and messages data run php artisan tinker
-factory(App\User::class, 30)->create();
-factory(App\Message::class, 500)->create();
+$ php artisan migrate
+$ php artisan tinker
+$ factory(App\User::class, 30)->create();
+$ factory(App\Message::class, 500)->create();
 ```
 
 5. Create and setup pusher account
