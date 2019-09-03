@@ -1,6 +1,6 @@
-# Laravel realtime chatting application with php laravel 5.8 using pusher
+# Laravel realtime chatting application
 
-Very simple php based chatting application.
+Very simple php based chatting application
 
 # Installation
 * run composer update
