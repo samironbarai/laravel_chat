@@ -13,3 +13,4 @@ Very simple php based chatting application
 * factory(App\Message::class, 500)->create();
 * login to https://pusher.com/ and create new app
 * put pusher credentials to .env file
+* replace PUSHER_APP_KEY in your app.blade.php
