@@ -3,6 +3,11 @@
 Very simple php based chatting application
 
 # Installation
+* clone this repo
+```
+https://github.com/samironbarai/laravel_chat
+```
+
 * run composer update
 * make a copy of .env.example and rename to .env
 * php artisan key:generate
