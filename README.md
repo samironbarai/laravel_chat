@@ -10,7 +10,7 @@ https://github.com/samironbarai/laravel_chat.git
 
 2. Install composer packages
 ```
-cd laravel-chat
+cd laravel_chat
 $ composer install
 ```
 
