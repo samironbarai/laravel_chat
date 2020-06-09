@@ -4,12 +4,12 @@ Very simple php based chatting application
 
 # Installation
 1. Clone this repo
-```
+```bash
 https://github.com/samironbarai/laravel_chat.git
 ```
 
 2. Install composer packages
-```
+```bash
 cd laravel_chat
 $ composer install
 ```
@@ -30,13 +30,13 @@ $ factory(App\Message::class, 500)->create();
 ```
 
 5. Create and setup pusher account
-```ruby
+```bash
 login to https://pusher.com/ and create new app
 put pusher credentials to .env file
-replace PUSHER_APP_KEY in your app.blade.php
 
-var pusher = new Pusher('49f3ba8c9d3adab2613e', {
-    cluster: 'ap2',
-    forceTLS: true
-});
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
 ```

@@ -231,11 +231,11 @@
         });
 
         // Enable pusher logging - don't include this in production
-        Pusher.logToConsole = true;
+        Pusher.logToConsole = false;
 
-        var pusher = new Pusher('49f3ba8c9d3adab2613e', {
-            cluster: 'ap2',
-            forceTLS: true
+        var pusher = new Pusher('{{ config('broadcasting.connections.pusher.key') }}', {
+            cluster: '{{ config('broadcasting.connections.pusher.options.cluster') }}',
+            forceTLS: {{ config('broadcasting.connections.pusher.options.useTLS') }}
         });
 
         var channel = pusher.subscribe('my-channel');
